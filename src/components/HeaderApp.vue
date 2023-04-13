@@ -5,43 +5,43 @@ export default {
         return {
             links: [
                 {
-                    text: "characters",
+                    text: "CHARACTERS",
                     current: false
                 },
                 {
-                    text: "comics",
+                    text: "COMICS",
                     current: true
                 },
                 {
-                    text: "movies",
+                    text: "MOVIES",
                     current: false
                 },
                 {
-                    text: "tv",
+                    text: "TV",
                     current: false
                 },
                 {
-                    text: "games",
+                    text: "GAMES",
                     current: false
                 },
                 {
-                    text: "collectibles",
+                    text: "COLLECTIBLES",
                     current: false
                 },
                 {
-                    text: "videos",
+                    text: "VIDEOS",
                     current: false
                 },
                 {
-                    text: "fans",
+                    text: "FANS",
                     current: false
                 },
                 {
-                    text: "news",
+                    text: "NEWS",
                     current: false
                 },
                 {
-                    text: "shop",
+                    text: "SHOP",
                     current: false
                 },
             ]
@@ -67,6 +67,14 @@ export default {
         </ul>
     </div>
 </header>
+
+<section class="jumbotron">
+    <div class="content">
+        <h3>--> Content goes here &lt;-- </h3>
+
+    </div>
+</section>
+
 </template>
 
 
@@ -100,9 +108,29 @@ export default {
 
     a {
         text-decoration: none;
+        font-size: .8rem;
+        font-weight: 500;
         color: $text-color;
     }
 
 
+}
+
+.jumbotron {
+    height: 140px;
+    background-color: $text-color;
+
+    .content {
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+
+        @include flex (row, start, center);
+
+        h3 {
+            font-size: 1.5rem;
+            color: $color-title;
+        }
+    }
 }
 </style>
