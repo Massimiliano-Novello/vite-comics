@@ -84,7 +84,7 @@ export default {
 @use "../style/partials/variabals" as *;
 .header {
     width: 70%;
-    height: 140px;
+    height: 100px;
     margin: 0 auto;
 
     @include flex (row, space-between, center);
@@ -117,7 +117,7 @@ export default {
 }
 
 .jumbotron {
-    height: 140px;
+    height: 100px;
     background-color: $text-color;
 
     .content {
